@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ReportNG suite" verbose="1">
+    <listeners>
+        <listener class-name="com.luma.customlisteners.CustomListeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    <test name="ReportNG Test">
+        <classes>
+            <class name="com.luma.testsuite.GearTest"></class>
+            <class name="com.luma.testsuite.MenTest"></class>
+            <class name="com.luma.testsuite.WomenTest"></class>
+        </classes>
+    </test>
+</suite>
